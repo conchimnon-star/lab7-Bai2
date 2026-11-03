@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    color: #202b38;
+    background: #f3f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 26px;
+    background: #fff;
+    border: 1px solid #d5deea;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(27, 45, 70, 0.08);
+}
+
+h1 {
+    margin: 0 0 26px;
+    color: #173b67;
+    font-size: 34px;
+}
+
+h2 {
+    margin: 0 0 14px;
+    color: #173b67;
+    font-size: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+select {
+    width: 100%;
+    max-width: 380px;
+    min-height: 42px;
+    padding: 8px 10px;
+    border: 1px solid #aebdce;
+    border-radius: 4px;
+    background: #fff;
+    color: #202b38;
+    font-size: 16px;
+}
+
+#info {
+    margin-top: 24px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #aebdce;
+}
+
+.data-table th,
+.data-table td {
+    padding: 11px 12px;
+    border: 1px solid #c6d1de;
+    text-align: left;
+    vertical-align: top;
+}
+
+.data-table thead {
+    color: #fff;
+    background: #173b67;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background: #eaf1f8;
+}
+
+.data-table tbody tr:hover {
+    background: #d7e8f8;
+}
+
+.message {
+    margin: 0;
+    padding: 12px 14px;
+    border: 1px solid #c6d8e9;
+    border-radius: 4px;
+    background: #edf5fc;
+}
+
+.message.error {
+    border-color: #e2b9b9;
+    background: #fff0f0;
+    color: #842525;
+}
+
+@media (max-width: 560px) {
+    body {
+        padding: 16px 10px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 6px;
+        font-size: 14px;
+    }
+}
